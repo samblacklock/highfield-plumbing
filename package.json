@@ -1,0 +1,32 @@
+{
+  "name": "highfield-next",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "samblacklock <samblacklock@me.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@zeit/next-css": "^0.2.0",
+    "hex-rgba": "^1.0.2",
+    "modern-normalize": "^0.4.0",
+    "next": "^6.0.3",
+    "prop-types": "^15.6.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-grid-gallery": "^0.4.11"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.8.2",
+    "node-sass": "^4.9.0",
+    "styled-jsx-plugin-stylus": "^0.0.4",
+    "stylus": "^0.54.5"
+  }
+}
