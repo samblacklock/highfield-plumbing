@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
 import Header from './Header';
@@ -6,7 +7,7 @@ import '../node_modules/modern-normalize/modern-normalize.css';
 import * as common from './commonStyles';
 
 const Layout = props => (
-  <>
+  <Fragment>
     <Head>
       <title>{ props.title }</title>
       <meta charSet="utf-8" />
@@ -25,6 +26,10 @@ const Layout = props => (
 
       <style jsx global>
         {`
+          html {
+            background-color: ${common.white}
+          }
+
           body {
             margin: 0;
             font-family: 'Open Sans', sans-serif
@@ -50,7 +55,7 @@ const Layout = props => (
         `}
       </style>
     </section>
-  </>
+  </Fragment>
 );
 
 Layout.defaultProps = {

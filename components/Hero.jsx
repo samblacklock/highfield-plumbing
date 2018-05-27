@@ -1,4 +1,3 @@
-import hexToRgba from 'hex-rgba';
 import { primary, white, textShadow } from './commonStyles';
 
 export default () => (
@@ -49,7 +48,6 @@ export default () => (
             text-shadow: ${textShadow}
           }
         }
-        
       `}
     </style>
   </section>
