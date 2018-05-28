@@ -5,4 +5,4 @@ export const black = '#000';
 export const white = '#fefefe';
 
 export const textShadow = '0 1px 2px rgba(0, 0, 0, 0.2)';
-export const boxShadow = '0 2px 4px rgba(0, 0, 0, 0.18)';
+export const boxShadow = '0 2px 10px rgba(0, 0, 0, 0.25)';

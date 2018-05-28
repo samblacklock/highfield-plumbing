@@ -90,7 +90,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "f06a61aefbbd2d5016b9"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "bd123a16345251a2f552"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -755,7 +755,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + ({"0":"main.js","1":"bundles/pages/_error.js","2":"bundles/pages/_app.js","4":"bundles/pages/index.js"}[chunkId]||chunkId) + "-" + {"0":"e03ef7bd68981e3ea565","1":"5bef41eb30202310ec0a","2":"39676fc5400b2f250b4e","4":"a7083f5d469156f0cf6f"}[chunkId] + ".js";
+/******/ 		script.src = __webpack_require__.p + "" + ({"0":"main.js","1":"bundles/pages/_error.js","2":"bundles/pages/_app.js","5":"bundles/pages/services.js","6":"bundles/pages/bathrooms.js"}[chunkId]||chunkId) + "-" + {"0":"12deda121026ba17bf6d","1":"5bef41eb30202310ec0a","2":"39676fc5400b2f250b4e","5":"a6f7e8230a9e0f3551c8","6":"ad67ef62132a2accc59b"}[chunkId] + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {

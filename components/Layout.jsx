@@ -12,10 +12,11 @@ const Layout = props => (
       <title>{ props.title }</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300i|Raleway:300" rel="stylesheet" />
       <link rel="icon" type="image/png" href="../static/img/flame.png" />
     </Head>
-    <section>
+
+    <section className="wrapper">
 
       <Header />
 
@@ -27,12 +28,23 @@ const Layout = props => (
       <style jsx global>
         {`
           html {
-            background-color: ${common.white}
+            background-color: ${common.black}
+            height: 100vh
           }
 
           body {
-            margin: 0;
+            background-color: ${common.white}
+            display: flex
+            flex-direction: column
+            margin: 0
+            min-height: 100%
             font-family: 'Open Sans', sans-serif
+          }
+
+          #__next, .wrapper {
+            display: flex
+            flex: 1
+            flex-direction: column
           }
 
           a,

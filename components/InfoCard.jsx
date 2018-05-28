@@ -16,31 +16,45 @@ const InfoCard = props => (
     <style jsx>
       {`
         img {
-          filter: grayscale(90%)
+          filter: brightness(100%) grayscale(90%)
           height: 100%
           mix-blend-mode: multiply
           object-fit: cover
           object-position: center
+          transition: 0.2s filter linear
           width: 100%
         }
 
         .info-card {
-          align-items: center
+          align-items: flex-end
           background: linear-gradient(to bottom right, ${hexToRgba(black, 60)}, ${secondary})
           background-size: cover
           box-shadow: ${boxShadow}
           display: flex
           height: 20rem
           justify-content: center
+          margin: 0.5rem 0
           overflow: hidden
           position: relative
-          width: 20rem
+          width: 100%
 
           .inner {
             color: ${white}
+            max-width: 20rem
             padding: 1rem
             position: absolute
             text-align: center
+          }
+
+          &:hover {
+            img {
+              filter: brightness(70%) grayscale(90%)
+            }
+          }
+
+          @media (min-width: 750px) {
+            width: ${props.large ? '100%' : '20rem'}
+            margin: 0.5rem
           }
         }
       `}

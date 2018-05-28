@@ -5,7 +5,7 @@ export default () => (
     <img src="../static/img/background_2.jpg" alt="tools on a bench" />
     <div className="hero-inner">
       <h1>HIGHFIELD PLUMBING AND HEATING</h1>
-      <p>All aspects of gas installation, service, repair, heating and plumbing from a well established family company based in the North East</p>
+      <p>All aspects of gas installation and service from a well established family company based in the North East</p>
     </div>
     <style jsx>
       {`
