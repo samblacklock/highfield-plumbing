@@ -1,14 +1,14 @@
 Arguments: 
-  /Users/Sam/.nvm/versions/node/v9.8.0/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js remove --dev styled-jsx-plugin-sass
+  /Users/Sam/.nvm/versions/node/v9.11.2/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js start
 
 PATH: 
-  /Users/Sam/.nvm/versions/node/v9.8.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
+  /Users/Sam/.nvm/versions/node/v9.11.2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
 
 Yarn version: 
   1.5.1
 
 Node version: 
-  9.8.0
+  9.11.2
 
 Platform: 
   darwin x64
@@ -42,7 +42,6 @@ npm manifest:
       "eslint-plugin-jsx-a11y": "^6.0.3",
       "eslint-plugin-react": "^7.8.2",
       "node-sass": "^4.9.0",
-      "styled-jsx-plugin-sass": "^0.2.4",
       "styled-jsx-plugin-stylus": "^0.0.4",
       "stylus": "^0.54.5"
     }
@@ -5526,10 +5525,6 @@ Lockfile:
     version "2.0.1"
     resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   
-  styled-jsx-plugin-sass@^0.2.4:
-    version "0.2.4"
-    resolved "https://registry.yarnpkg.com/styled-jsx-plugin-sass/-/styled-jsx-plugin-sass-0.2.4.tgz#97b9660fbcd188fcc9959bb350a8597d8271ee16"
-  
   styled-jsx-plugin-stylus@^0.0.4:
     version "0.0.4"
     resolved "https://registry.yarnpkg.com/styled-jsx-plugin-stylus/-/styled-jsx-plugin-stylus-0.0.4.tgz#f786abc20b5ead26e442fa3d05ed9264f6c831bb"
@@ -6159,14 +6154,16 @@ Lockfile:
       window-size "0.1.0"
 
 Trace: 
-  Error: Not enough arguments, expected at least 1.
-      at new MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
-      at Object.<anonymous> (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:60368:13)
-      at Generator.next (<anonymous>)
-      at step (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:98:30)
-      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:116:14
-      at new Promise (<anonymous>)
-      at new F (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:23451:28)
-      at Object.<anonymous> (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:95:12)
-      at Object.run (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:60486:17)
-      at run (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:89113:20)
+  Error: Command failed.
+  Exit code: 1
+  Command: sh
+  Arguments: -c next start
+  Directory: /Users/Sam/Code/highfield-next
+  Output:
+  
+      at ProcessTermError.MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
+      at new ProcessTermError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:226:113)
+      at ChildProcess.<anonymous> (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:30281:17)
+      at ChildProcess.emit (events.js:180:13)
+      at maybeClose (internal/child_process.js:936:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:220:5)
